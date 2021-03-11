@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Code\\c#\\GarageAB\\GarageAB.csproj": {}
+    "D:\\Documents\\Code\\temp\\garageab\\GarageAB.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Code\\c#\\GarageAB\\GarageAB.csproj": {
+    "D:\\Documents\\Code\\temp\\garageab\\GarageAB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Code\\c#\\GarageAB\\GarageAB.csproj",
+        "projectUniqueName": "D:\\Documents\\Code\\temp\\garageab\\GarageAB.csproj",
         "projectName": "GarageAB",
-        "projectPath": "D:\\Documents\\Code\\c#\\GarageAB\\GarageAB.csproj",
+        "projectPath": "D:\\Documents\\Code\\temp\\garageab\\GarageAB.csproj",
         "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Code\\c#\\GarageAB\\obj\\",
+        "outputPath": "D:\\Documents\\Code\\temp\\garageab\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",

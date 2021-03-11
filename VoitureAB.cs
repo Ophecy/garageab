@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GarageAB
 {
@@ -7,46 +8,119 @@ namespace GarageAB
 	/// </summary>
 	class VoitureAB
 	{
-		private int id;
-		private string marque;
-		private string modele;
-		private int puissance;
-		private int vitesseMax;
-		private int prix;
+		protected int id;
+		protected string marque;
+		protected string modele;
+		protected int puissance;
+		protected int vitesseMax;
+		protected int prix;
+
 		/// <summary>
-		/// Permet de get ***l'id***
+		/// Get l'**ID** de cette instance de l'objet voiture
 		/// </summary>
-		/// <returns>renvoie l'id</returns>
-		public int Getid()
+		/// <returns>L'**ID** sous forme d'<see cref="int"/></returns>
+		public int GetId()
 		{
 			return id;
 		}
 
 		/// <summary>
-		/// permet de set **l'id**
+		/// Set l'**ID**
 		/// </summary>
-		/// <param name="value"></param>
-		public void Setid(int value)
+		/// <param name="id"></param>
+		public void SetId(int id)
 		{
-			id = value;
+			this.id = id;
 		}
 
 		/// <summary>
-		/// permet de get la *marque*
+		/// Get la marque de la voiture 
 		/// </summary>
-		/// <returns>renvoie la marque</returns>
-		public string Getmarque()
+		/// <returns>la marque de la voiture sous forme de <see cref="string"/></returns>
+		public string GetMarque()
 		{
 			return marque;
 		}
 
 		/// <summary>
-		/// permet de set la marque
+		/// Set la marque de la voiture 
 		/// </summary>
-		/// <param name="value"></param>
-		public void Setmarque(string value)
+		/// <param name="marque"></param>
+		public void SetMarque(string marque)
 		{
-			marque = value;
+			this.marque = marque;
+		}
+
+		/// <summary>
+		/// Get le modele de la voiture
+		/// </summary>
+		/// <returns>Le modele sous forme de <see cref="string"/></returns>
+		public string GetModele()
+		{
+			return modele;
+		}
+
+		/// <summary>
+		/// Set le modele de la voiture
+		/// </summary>
+		/// <param name="modele">Le modele de la voiture</param>
+		public void SetModele(string modele)
+		{
+			this.modele = modele;
+		}
+
+		/// <summary>
+		/// Get la puissance de la voiture en nombre de ch
+		/// </summary>
+		/// <returns>La puissance sous forme de <see cref="int"/></returns>
+		public int GetPuissance()
+		{
+			return puissance;
+		}
+
+		/// <summary>
+		/// Set la puissance de la voiture
+		/// </summary>
+		/// <param name="puissance">La puissance de la voiture</param>
+		public void SetPuissance(int puissance)
+		{
+			this.puissance = puissance;
+		}
+
+		/// <summary>
+		/// Get la vitesse max de la voiture
+		/// </summary>
+		/// <returns>la vitesse de la voiture sous forme d'<see cref="int"/></returns>
+		public int GetVitesseMax()
+		{
+			return vitesseMax;
+		}
+
+		/// <summary>
+		/// Set la vitesse max de la voiture
+		/// </summary>
+		/// <param name="vitesseMax">La vitesse de la voiture</param>
+		public void SetVitesseMax(int vitesseMax)
+		{
+			this.vitesseMax = vitesseMax;
+		}
+
+		/// <summary>
+		/// Get le prix en €
+		/// </summary>
+		/// <returns>Le prix sous forme d'<see cref="int"/></returns>
+		public int GetPrix()
+		{
+			return prix;
+		}
+
+		/// <summary>
+		/// Set le prix
+		/// </summary>
+		/// <param name="prix">Le prix de la voiture</param>
+		public void SetPrix(int prix)
+		{
+			this.prix = prix;
 		}
 
 		/// <summary>
@@ -54,15 +128,7 @@ namespace GarageAB
 		/// </summary>
 		public virtual void AfficherVehiculeAB()
 		{
-			Console.WriteLine("VoitureAB{",
-			"id=", Getid(),
-			", marque='", Getmarque(), '\'',
-			", modele='", Getmodele(), '\'',
-			", puissance=", Getpuissance(),
-			", vitesseMax=", GetvitesseMax(),
-			", prix=", Getprix(),
-			'}'
-			);
+			Console.WriteLine($"VoitureAB {{id={GetId()},marque='{GetMarque()}',modele='{GetModele()}',puissance={GetPuissance()},vitesseMax={GetVitesseMax()},prix={GetPrix()}}}");
 		}
 		/// <summary>
 		/// Constructeur de la classe voiture
@@ -75,12 +141,12 @@ namespace GarageAB
 		/// <param name="prix"></param>
 		public VoitureAB(int id, string marque, string modele, int puissance, int vitesseMax, int prix)
 		{
-			this.Setid(id);
-			this.Setmarque(marque);
-			this.Setmodele(modele);
-			this.Setpuissance(puissance);
-			this.SetvitesseMax(vitesseMax);
-			this.Setprix(prix);
+			this.SetId(id);
+			this.SetMarque(marque);
+			this.SetModele(modele);
+			this.SetPuissance(puissance);
+			this.SetVitesseMax(vitesseMax);
+			this.SetPrix(prix);
 		}
 	}
 }

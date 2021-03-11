@@ -7,6 +7,17 @@ namespace GarageAB
 		private int nbKm;
 		private string dateMiseCirculation;
 
+		/// <summary>
+		/// Constructeur de la classe <see cref="OccasionAB"/>
+		/// </summary>
+		/// <param name="id"></param>
+		/// <param name="marque"></param>
+		/// <param name="modele"></param>
+		/// <param name="puissance"></param>
+		/// <param name="vitesseMax"></param>
+		/// <param name="prix"></param>
+		/// <param name="nbKm"></param>
+		/// <param name="dateMiseCirculation"></param>
 		public OccasionAB(int id, string marque, string modele, int puissance, int vitesseMax, int prix, int nbKm, string dateMiseCirculation) : base(id, marque, modele, puissance, vitesseMax, prix)
 		{
 			this.nbKm = nbKm;
@@ -14,9 +25,9 @@ namespace GarageAB
 		}
 
 		/// <summary>
-		/// Get le nombre de killometres
+		/// Get le nombre de kilometres
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>Le nombre de kilometres sous forme d'<see cref="int"/></returns>
 		public int GetnbKm()
 		{
 			return nbKm;
@@ -25,33 +36,34 @@ namespace GarageAB
 		/// <summary>
 		/// Set le nombre de kilometres
 		/// </summary>
-		/// <param name="value"></param>
-		public void SetnbKm(int value)
+		/// <param name="nbKm">Le nombre de kilometres</param>
+		public void SetnbKm(int nbKm)
 		{
-			nbKm = value;
+			this.nbKm = nbKm;
 		}
 
+		/// <summary>
+		/// Récupere la date de mise en circulation de la voiture
+		/// </summary>
+		/// <returns>La date de mise en circulation sous forme de <see cref="string"/></returns>
 		public string GetdateMiseCirculation()
 		{
 			return dateMiseCirculation;
 		}
 
-		public void SetdateMiseCirculation(string value)
+		/// <summary>
+		/// Set la date de mise en circulation de la voiture
+		/// </summary>
+		/// <param name="dateMiseCirculation">La date de mise en circulation de la voiture</param>
+		public void SetdateMiseCirculation(string dateMiseCirculation)
 		{
-			dateMiseCirculation = value;
+			this.dateMiseCirculation = dateMiseCirculation;
 		}
 
+		/// <inheritdoc/>
 		public override void AfficherVehiculeAB()
 		{
-			Console.WriteLine("VoitureAB{",
-			"id=", Getid(),
-			", marque='", Getmarque(), '\'',
-			", modele='", Getmodele(), '\'',
-			", puissance=", Getpuissance(),
-			", vitesseMax=", GetvitesseMax(),
-			", prix=", Getprix(),
-			'}'
-			);
+			Console.WriteLine($"VoitureAB {{id={GetId()},marque='{GetMarque()}',modele='{GetModele()}',puissance={GetPuissance()},vitesseMax={GetVitesseMax()},prix={GetPrix()},nbKm={GetnbKm()},dateMiseCirculation={GetdateMiseCirculation()}}}");
 		}
 
 	}
