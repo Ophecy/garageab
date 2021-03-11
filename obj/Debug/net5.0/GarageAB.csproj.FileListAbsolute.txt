@@ -1,0 +1,16 @@
+D:\Documents\Code\c#\GarageAB\bin\Debug\net5.0\GarageAB.exe
+D:\Documents\Code\c#\GarageAB\bin\Debug\net5.0\GarageAB.deps.json
+D:\Documents\Code\c#\GarageAB\bin\Debug\net5.0\GarageAB.runtimeconfig.json
+D:\Documents\Code\c#\GarageAB\bin\Debug\net5.0\GarageAB.runtimeconfig.dev.json
+D:\Documents\Code\c#\GarageAB\bin\Debug\net5.0\GarageAB.dll
+D:\Documents\Code\c#\GarageAB\bin\Debug\net5.0\ref\GarageAB.dll
+D:\Documents\Code\c#\GarageAB\bin\Debug\net5.0\GarageAB.pdb
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\GarageAB.csprojAssemblyReference.cache
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\GarageAB.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\GarageAB.AssemblyInfoInputs.cache
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\GarageAB.AssemblyInfo.cs
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\GarageAB.csproj.CoreCompileInputs.cache
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\GarageAB.dll
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\ref\GarageAB.dll
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\GarageAB.pdb
+D:\Documents\Code\c#\GarageAB\obj\Debug\net5.0\GarageAB.genruntimeconfig.cache
